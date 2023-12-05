@@ -1,0 +1,9 @@
+on: push
+
+jobs:
+  setup:
+    name: The pipeline initial setup
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print an text
+        run: echo "My first text"
