@@ -1,0 +1,9 @@
+on: push
+
+jobs:
+  setup:
+    name: The setup job
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run a print command
+        run: echo "Teeeeeext!!!"
