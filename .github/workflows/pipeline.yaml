@@ -5,5 +5,15 @@ jobs:
     name: The pipeline initial setup
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
+        name: Checking out the code
+
       - name: Print an text
         run: echo "My first text"
+
+      - name: Build and push
+        uses: docker/build-push-action@v5
+        with:
+          push: false
+          tags: cicd:0.1
+
