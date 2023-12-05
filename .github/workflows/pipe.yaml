@@ -20,4 +20,4 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: karlasfb/fmi-cicd-2023
+          tags: ${{ vars.DOCKERHUB_USERNAME }}/fmi-cicd-2023
